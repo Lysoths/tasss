@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: orange;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 30px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.356);
+  display: flex;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.left-side {
+  width: 35%;
+  height: 100%;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-side {
+  width: 35%;
+  height: 100%;
+  border-left: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-side img {
+  width: 50%;
+  margin: 30px;
+}
+
+.right-side img {
+  width: 50%;
+  margin: 30px;
+}
+
+.middle-side {
+  width: 35%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.middle-side .player1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 120px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.middle-side .player1 h1 {
+  font-size: 100%;
+  color: red;
+}
+
+.middle-side .player1 p {
+  font-size: 100%;
+}
+
+.middle-side .player2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.middle-side .player2 h1 {
+  font-size: 100%;
+  color: orange;
+}
+
+.middle-side .player2 p {
+  font-size: 100%;
+}
+
+.left-side img:hover {
+  cursor: pointer;
+}
+
+@keyframes myanimate {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.timer h1 {
+  transition: all 0.4s ease-in-out;
+}
+
+.active {
+  animation: myanimate 1s infinite;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 100%;
+}
+
+.kazanan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.timer h1 {
+  font-size: 100%;
+}
+
+.kazanan h1 {
+  font-size: 100%;
+}
+
+button {
+  padding: 15px;
+  margin: 25px;
+  opacity: 0;
+}
